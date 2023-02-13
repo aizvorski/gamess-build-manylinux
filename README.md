@@ -41,3 +41,7 @@ Currently it uses manylinux2014, compatible with Ubuntu 20.04+, CentOS 7+, Fedor
 - [ ] Link using a patched version of lked (need to figure out how to make lked use gcc as the linker, and pass a bunch of extra options at the end)
 - [ ] Build with Intel MKL (possibly faster, need to check license)
 - [ ] Include LibXC
+
+## Disclaimer
+
+This is not an official part of GAMESS, just a separate set of build scripts.  The resulting binary has not been tested much or at all; the compilation succeeds and that's about it (for now).
