@@ -20,7 +20,7 @@ After a while (20-30 minutes), this command finishes and a compiled GAMESS binar
 
 ## How GAMESS is configured
 
-GAMESS has many configuration options; in the interest of portability, the build method here makes some significant assumptions.
+GAMESS has many configuration options; in the interest of portability, the build method here sets all of them to values that make some significant assumptions.
 
 The biggest assumption is that the compiled binary would be run on a single machine only.  GAMESS normally has a variety of methods to run on multiple nodes (MPI, sockets etc) but none of these are included here.  However OpenMP is included, so this version would run efficiently on a single machine with potentially very large number of cores (64 or more).
 
