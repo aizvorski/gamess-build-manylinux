@@ -1,12 +1,12 @@
 # gamess-build-manylinux
 
-Build portable GAMESS in a [manylinux](https://github.com/pypa/manylinux) docker image
+Build portable [GAMESS](https://www.msg.chem.iastate.edu/gamess/index.html) in a [manylinux](https://github.com/pypa/manylinux) docker image
 
 ## How to build
 
 Make sure you have docker installed on the host machine (typically `sudo apt install docker.io` or `sudo yum install docker`).
 
-Download the GAMESS source to inside this repo, for example with:
+Download the GAMESS (version 2022.2) source tar.gz to inside this repo, for example with:
 ```
 wget https://www.msg.chem.iastate.edu/GAMESS/download/source/gamess-current.tar.gz
 ```
@@ -20,7 +20,7 @@ After a while (20-30 minutes), this command finishes and a compiled GAMESS binar
 
 ## How GAMESS is configured
 
-GAMESS has many configuration options; in the interest of portability, this process makes some significant assumptions.
+GAMESS has many configuration options; in the interest of portability, the build method here makes some significant assumptions.
 
 The biggest assumption is that the compiled binary would be run on a single machine only.  GAMESS normally has a variety of methods to run on multiple nodes (MPI, sockets etc) but none of these are included here.  However OpenMP is included, so this version would run efficiently on a single machine with potentially very large number of cores (64 or more).
 
