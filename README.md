@@ -1,10 +1,10 @@
 # gamess-build-manylinux
 
-Build GAMESS in a manylinux docker image
+Build portable GAMESS in a [manylinux](https://github.com/pypa/manylinux) docker image
 
 ## How to build
 
-Make sure you have docker installed on the host machine.
+Make sure you have docker installed on the host machine (typically `sudo apt install docker.io` or `sudo yum install docker`).
 
 Download the GAMESS source to inside this repo, for example with:
 ```
