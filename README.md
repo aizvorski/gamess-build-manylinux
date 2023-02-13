@@ -30,7 +30,7 @@ There are also many options for a math library (BLAS).  This version is compiled
 
 The resulting binary is intended to be widely portable across recent Linux versions.  It uses the [manylinux](https://github.com/pypa/manylinux) method of dynamically linking old versions of libc, libm and libpthread (which newer versions are backward compatible with) and statically linking everything else.
 
-Currently it uses manylinux2014, compatible with Ubuntu 20.04+, CentOS 7+, Fedora 32+, and openSUSE 15.3+ (and probably RHEL 7+ and Ubuntu 13.04+).  The build itself is hosted on CentOS 7 and uses the GCC 10 toolchain.
+Currently it uses manylinux2014, compatible with Ubuntu 20.04+, CentOS 7+, Fedora 32+, and openSUSE 15.3+ (and probably all the way back to RHEL 7+ and Ubuntu 13.04+).  It is not necessary to install any dependencies in the distro to run the resulting binary.  The build itself is hosted on CentOS 7 and uses the GCC 10 toolchain.
 
 ## Todo
 
