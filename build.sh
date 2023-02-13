@@ -9,7 +9,7 @@ yum install -y lapack-devel.x86_64 lapack64-static.x86_64
 yum install -y glibc-static
 
 # Unpack
-tar xzf /shared/gamess-source-2022.2.tgz -C /shared
+tar xzf /shared/gamess-current.tgz -C /shared
 cp /shared/install.info /shared/gamess/
 
 # Compile
